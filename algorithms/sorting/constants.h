@@ -9,7 +9,7 @@
 #ifndef algorithms_constants_h
 #define algorithms_constants_h
 
-#define SIZE_OF_ARRAY 8
+#define SIZE_OF_ARRAY 50
 
 extern int randomArray[SIZE_OF_ARRAY];
 

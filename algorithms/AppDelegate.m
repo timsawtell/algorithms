@@ -35,11 +35,12 @@ void NSShutUp(const char*func, id fmt, ...) {
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    NSLog(@"\nint randomArray[8] = {1, 32, 23, 4, 12, 9 , 8, 10};\n");
+    NSLog(@"\nint randomArray[SIZE_OF_ARRAY] = {13, 46, 24, 23, 48, 44, 21, 50, 29, 12, 26, 1, 27, 40, 17, 3, 9, 25, 4, 38, 32, 43, 18, 45, 8, 2, 14, 11, 20, 39, 10, 15, 35, 6, 34, 41, 5, 47, 49, 37, 30, 22, 33, 16, 36, 7, 28, 31, 19, 42};\n");
     [self bubbleSort];
     [self selectionSort];
     [self insertionSort];
     [self mergeSort];
+    [self quickSort];
     return YES;
 }
 
@@ -71,6 +72,13 @@ void NSShutUp(const char*func, id fmt, ...) {
     [self printResults:result];
 }
 
+- (void)quickSort
+{
+    NSLog(@"Start Quick Sort");
+    int *result = sort_quick();
+    [self printResults:result];
+}
+
 - (void)printResults:(int*)result
 {
     NSMutableString *string= [NSMutableString new];
@@ -82,7 +90,7 @@ void NSShutUp(const char*func, id fmt, ...) {
     }
     NSLog(@"%@", string);
     NSLog(@"Number of iterations: %d", numberOfIterations);
-    NSLog(@"Number of inner iterations: %d\n", numberOfInnerIterations);
+    NSLog(@"Number of inner iterations (total): %d\n", numberOfInnerIterations);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

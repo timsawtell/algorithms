@@ -10,3 +10,4 @@
 #import "selection.h"
 #import "insertion.h"
 #import "merge.h"
+#import "quick.h"

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B9E8FF41856E41F00530E09 /* quick.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B9E8FF31856E41F00530E09 /* quick.c */; };
 		2BB5DC401856828100EA4E3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB5DC3F1856828100EA4E3C /* Foundation.framework */; };
 		2BB5DC421856828100EA4E3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB5DC411856828100EA4E3C /* CoreGraphics.framework */; };
 		2BB5DC441856828100EA4E3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB5DC431856828100EA4E3C /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B9E8FF21856E41800530E09 /* quick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quick.h; sourceTree = "<group>"; };
+		2B9E8FF31856E41F00530E09 /* quick.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = quick.c; sourceTree = "<group>"; };
 		2BB5DC3C1856828100EA4E3C /* algorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = algorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB5DC3F1856828100EA4E3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2BB5DC411856828100EA4E3C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -175,6 +178,8 @@
 				2BE6AB391856997C0087BF4E /* insertion.c */,
 				2BE6AB3D18569FBB0087BF4E /* merge.h */,
 				2BE6AB3B18569FB30087BF4E /* merge.c */,
+				2B9E8FF21856E41800530E09 /* quick.h */,
+				2B9E8FF31856E41F00530E09 /* quick.c */,
 			);
 			path = sorting;
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 				2BE6AB3C18569FB30087BF4E /* merge.c in Sources */,
 				2BB5DC501856828100EA4E3C /* AppDelegate.m in Sources */,
 				2BE6AB3A1856997C0087BF4E /* insertion.c in Sources */,
+				2B9E8FF41856E41F00530E09 /* quick.c in Sources */,
 				2BB5DC4C1856828100EA4E3C /* main.m in Sources */,
 				2BE6AB361856935C0087BF4E /* selection.c in Sources */,
 			);

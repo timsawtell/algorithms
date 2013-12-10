@@ -15,6 +15,7 @@
 int *sort_selection()
 {
     numberOfIterations = 0;
+    numberOfInnerIterations = 0;
     static int tmpArray[SIZE_OF_ARRAY];
     memcpy(tmpArray, randomArray, SIZE_OF_ARRAY * sizeof(int));
     int tmp;

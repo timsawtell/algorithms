@@ -52,12 +52,6 @@ void merge(int a[], int low, int mid, int high)
         a[low + k] = b[k];
         k--;
     }
-    int l = 0;
-    while (l < SIZE_OF_ARRAY) {
-        printf("%d,", a[l]);
-        l++;
-    }
-    printf("\n\n");
 }
 
 void mergesort2(int a[], int low, int high)
@@ -65,14 +59,18 @@ void mergesort2(int a[], int low, int high)
     if (low < high) {
         int m = (high + low)/2;
         mergesort2(a, low, m);
+        //printf("mergesort2(a, %d, %d)", low, m);
         mergesort2(a, m + 1, high);
+        //printf("mergesort2(a, %d, %d)", m + 1, high);
         merge(a, low, m, high);
+        //printf("merge(a, %d, %dm %d)", low, m, high);
     }
 }
 
 int *sort_merge()
 {
     numberOfIterations = 0;
+    numberOfInnerIterations = 0;
     static int tmpArray[SIZE_OF_ARRAY];
     memcpy(tmpArray, randomArray, SIZE_OF_ARRAY * sizeof(int));
     mergesort2(tmpArray, 0, SIZE_OF_ARRAY-1);
