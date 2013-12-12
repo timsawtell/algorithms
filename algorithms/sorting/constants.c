@@ -9,6 +9,6 @@
 #include <stdio.h>
 #include "constants.h"
 
-int randomArray[SIZE_OF_ARRAY] = {13, 46, 24, 23, 48, 44, 21, 50, 29, 12, 26, 1, 27, 40, 17, 3, 9, 25, 4, 38, 32, 43, 18, 45, 8, 2, 14, 11, 20, 39, 10, 15, 35, 6, 34, 41, 5, 47, 49, 37, 30, 22, 33, 16, 36, 7, 28, 31, 19, 42};
+int randomArray[SIZE_OF_ARRAY] = {11, 12, 18, 6, 2, 8, 16, 19, 1, 7, 13, 5, 9, 15, 10, 14, 17, 3, 20, 4};
 int numberOfIterations = 0;
 int numberOfInnerIterations = 0;
